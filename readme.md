@@ -30,7 +30,6 @@
     [站长之家API获取](https://my.chinaz.com/ChinazAPI/DataCenter/MyDataApi)；  
     [滑块验证API获取](http://rrocr.com/)；
 
-
     '''
     [config]# API：站长ICP|滑动验证
     chinaz = eaxxxxxxxxxxxxxxxxxxxxxxxxxxx43b 
@@ -49,7 +48,6 @@
 ![img_1.png](images%2Fimg_1.png)
 
 - 程序运行截图
-
 
     '''
       0%|          | 0/3 [00:00<?, ?it/s]成功提交金华市悦企信息技术有限公司
