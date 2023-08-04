@@ -1,0 +1,2 @@
+http://w9akqhsnukputwh7.xinlan.web.zjcbo.net:3000/jshERP-boot/user/getAllList;.ico
+https://erp.211.daxue.cloud:443/jshERP-boot/user/getAllList;.ico
