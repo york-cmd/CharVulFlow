@@ -30,7 +30,7 @@
     [站长之家API获取](https://my.chinaz.com/ChinazAPI/DataCenter/MyDataApi)；  
     [滑块验证API获取](http://rrocr.com/)；
 
-    '''
+    ```
     [config]# API：站长ICP|滑动验证
     chinaz = eaxxxxxxxxxxxxxxxxxxxxxxxxxxx43b 
     appkey = d2xxxxxxxxxxxxxxxxxxxxxxxxxxx52e
@@ -40,8 +40,8 @@
     
     [thor]  # 雷神
     cookie = 25xxxxxx-d1b7-4277-a79d-xxxxxxxxxx35
-    '''
-3. 在url.txt填写能回显的所有url，运行main。
+    ```
+4. 在url.txt填写能回显的所有url，运行main。
 
 ### 0x02、使用效果
 - jshERP-boot未授权访问为例：直接访问/jshERP-boot/user/getAllList;.ico即可获取所有用户账户密码。
@@ -49,21 +49,17 @@
 
 - 程序运行截图
 
-    '''
-
+    ```
       0%|          | 0/3 [00:00<?, ?it/s]成功提交金华市悦企信息技术有限公司
-
      33%|███▎      | 1/3 [01:05<02:11, 65.51s/it]成功提交苏州谷鸽信息技术有限公司
-
      67%|██████▋   | 2/3 [02:08<01:04, 64.25s/it]成功提交广州阿米巴云算软件有限公司
-
     100%|██████████| 3/3 [03:23<00:00, 67.71s/it]
-
-    '''
+    ```
 - 提交成功列表
     ![img_2.png](images%2Fimg_2.png)
     ![img_3.png](images%2Fimg_3.png)
 - 漏洞详细
+    ![img_4.png](images%2Fimg_4.png)
 
 ### 0x03、项目逻辑
 - 运行流程结构
