@@ -24,6 +24,8 @@
 1. 在module.get_shoot修改适合你电脑的webdrive配置，参考：  
    - [Edge浏览器配置Selenium](https://blog.csdn.net/tk1023/article/details/109078613)    
    - Chrome浏览器配置Selenium需修改部分代码
+   - 第17行代码需要修改为自己的电脑用户名，否则截图浏览器出现弹窗。
+
 
 2. 在module.config填写需要的cookie以及apikey：
 
