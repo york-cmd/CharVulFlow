@@ -28,10 +28,10 @@
 
 
 2. 在module.config填写需要的cookie以及apikey：
-
-    [站长之家API获取](https://my.chinaz.com/ChinazAPI/DataCenter/MyDataApi)；  
-    [滑块验证API获取](http://rrocr.com/)；
-
+    - [补天公益提交入口](https://www.butian.net/Loo/submit)；
+    - [雷神公益提交入口](https://bug.bountyteam.com/index)；
+    - [站长之家API获取](https://my.chinaz.com/ChinazAPI/DataCenter/MyDataApi)；  
+    - [滑块验证API获取](http://rrocr.com/)；
     ```
     [config]# API：站长ICP|滑动验证
     chinaz = eaxxxxxxxxxxxxxxxxxxxxxxxxxxx43b 
