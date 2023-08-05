@@ -1,4 +1,4 @@
-import ast
+import json
 import requests
 from time import sleep
 
@@ -19,7 +19,9 @@ def but_upload(pash):
         print("上传图片超时")
         sleep(5)
         return but_upload(pash)
-    zidian = ast.literal_eval(rsp.text)
-    return zidian["url"]
+    data = json.loads(rsp.text)
+    data = data["url"]
+    # print(data)
+    return data
 
 # but_upload(pash="D:/360/CharVulFlow/temp/site.png")

@@ -1,3 +1,4 @@
+import json
 from urllib.parse import urlparse
 
 import requests
@@ -16,19 +17,20 @@ def get_icp(url):
     else:
         url = f"http://{url}"
     key = config.get('config', 'chinaz')
-    rsp = requests.get(f"https://apidatav2.chinaz.com/single/icp?key={key}&domain={url}")
-    # print(rsp.text)
-    if "null" in rsp.text:
+    url = f"https://apidatav2.chinaz.com/single/icp?key={key}&domain={url}"
+    res = requests.get(url=url)
+    # print(res.text)
+    data = json.loads(res.text)
+    if data["Result"] == None:
         return []
-    res = ast.literal_eval(rsp.text)
-    if res["Result"]["CompanyType"] == "个人":
+    elif data["Result"]["CompanyType"] == "个人":
         return []
-    elif res["StateCode"] == 1:
-        return res["Result"]["CompanyName"]
-    elif res["StateCode"] == 10022:
+    elif data["StateCode"] == 1:
+        return data["Result"]["CompanyName"]
+    elif data["StateCode"] == 10022:
         print("[WARN] chinaz调用次数不足")
     else:
-        print(res["Reason"])
+        print(data["Reason"])
         return []
 
 # print(get_icp(url="mingshang.cc"))
